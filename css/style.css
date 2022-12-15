@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
+
+
+/* ========= start default  */
+*,
+*::after,
+*::before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:active,
+:hover,
+:focus {
+    outline: 0 !important;
+    outline-offset: 0;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--primary-color) !important;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+ul,
+ol {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-size: 100%;
+    font-weight: 600;
+    font-family: 'Dosis', sans-serif;
+    
+}
+
+/* ========= end default  */
+
+
+/* ========= Variable declaraton  start */
+:root {
+    --primary-color: #ff553e;
+    --secondary-color: #333;
+    --white-color: #fff;
+    --black-color: #000;
+}
+
+/* ========= Variable declaraton end  */
+
+
+/* =========  custom srcoll bar   */
+::-webkit-scrollbar {
+    width: 0.6rem;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--white-color);
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 30px;
+    background: var(--primary-color);
+}
+
+/* ======== custom srcoll bar   */
+
+
+/* ========= start custom css design   */
+h1 {
+    font-size: 3rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: white;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: white;
+}
+
+h4 {
+    font-weight: 400;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    color: white;
+}
+
+h5 {
+    font-size: .7rem;
+    text-transform: capitalize;
+    font-weight: 400;
+    color: white;
+}
+
+p {
+    font-size: 1rem;
+    color: var(--white-color);
+    font-weight: 400;
+    line-height: 1.7rem;
+    letter-spacing: 0.07rem;
+    opacity: 0.8;
+}
+
+.main-btn {
+    border-top: 1px solid var(--primary-color);
+    border-bottom: 1px solid var(--primary-color);
+    color: #ff553e;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.main-btn:hover {
+    background-color: #ff553e !important;
+    border: 1px solid var(--secondary-color);
+}
+
+.wrapper {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    background-color: var(--secondary-color);
+}
+
+/* ========= end custom css design   */
+
+
+/* ========= Top bac default  */
+#top {
+    background-color: var(--secondary-color);
+    /* color: var(--primary-color); */
+    color: white;
+}
+
+/* ========= Top bac default  */
+
+
+/* ========= navbar start   */
+.navbar button i {
+    color: var(--white-color);
+}
+
+.navbar-nav {}
+
+.navigation_bar {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 30px;
+    transition: all .2s ease-in;
+    z-index: 1000;
+}
+
+.navigation_bar .nav-item {
+    padding-left: 1rem;
+}
+
+.navigation_bar .nav-link {
+    color: var(--white-color);
+
+}
+
+.navigation_bar .nav-item .active {
+    color: var(--primary-color);
+}
+
+/* ========= navbar end  */
+
+
+
+/* carusel section  */
+.carousel-caption {
+    bottom: 45%;
+}
+
+.carousel-caption h2 {
+    font-weight: 700;
+    text-shadow: 0 0 3px var(--primary-color);
+}
+
+.carousel-caption p {
+    line-height: 1rem;
+    font-weight: 500;
+    text-shadow: 0 0 3px var(--primary-color);
+}
+
+/* carusel section  */
+
+
+
+
+
+
+
+/* scroll behaviour start */
+.navigation_bar.scroll {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0px 1px 15px var(--white-color);
+    background-color: var(--black-color);
+}
+
+/* scroll behaviour end */
+
+
+
+
+
+
+/* new arrive section start  */
+.new_arrive_col {
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.new_arrive_col img {
+    box-sizing: border-box;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+}
+
+.new_arrive_col img:hover {
+    scale: 1.2;
+}
+
+#new-arrives .hover_content {
+    position: absolute;
+    bottom: 0;
+    /* z-index: 100; */
+    box-sizing: border-box;
+    margin: 1rem;
+    cursor: pointer;
+}
+
+#new-arrives .hover_content p {
+    line-height: 1.2rem;
+    text-shadow: 2px 1px 5px var(--secondary-color);
+    padding: 0px auto;
+    font-size: 1.2rem;
+    letter-spacing: .03rem;
+}
+
+/* new arrive section end  */
+
+
+
+
+/* nav tabs section  */
+.nav-tabs{
+    display: flex;
+    justify-content: center;
+
+}
+.nav-tabs li {
+    margin: 1px 1rem;
+    color: var(--primary-color) !important;
+}
+
+.nav-tabs li .active{
+    color: var(--secondary-color) !important;
+    background-color: var(--primary-color) !important;
+}
+.nav-tabs .nav-link{
+    color: var(--primary-color);
+    border: none;
+}
+
+.tab-content .card{
+    background-color: var(--black-color);
+    border: none;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.tab-content .card img{
+    transition: all 0.3s ease-in;
+}
+.tab-content .card img:hover{
+    scale: 1.1;
+}
+.tab-content .card-body h4{
+    font-size: 1rem;
+    color: var(--secondary-color);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.tab-content .card-body h2{
+    font-size: 1.3rem;
+    line-height: 1rem;
+    letter-spacing: 0.02rem;
+    font-weight: 600;
+}
+.tab-content .card-body p{
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    /* color: var(--primary-color); */
+    color: var(--secondary-color);
+    font-weight: 800;
+}
+.tab-content .card-body i{
+    color: var(--primary-color);
+}
+.tab-content .card-body b{
+    color: var(--primary-color);
+}
+/* nav tabs section  */
+
+
+
+
+/* deal of the day start  */
+#deal{
+    background-color:var(--secondary-color);
+    margin-top: -1rem;
+}
+#deal .container{
+    background: url('../asset/img/img-4.jpg') no-repeat center;
+    background-size: cover;
+    padding: 3rem 1rem;
+    border: 1px solid var(--white-color);
+    border-radius: 5px;
+}
+#deal h1,
+#deal h2{
+    font-weight: 600;
+}
+#deal p {
+    font-size: 1.2rem;
+    line-height: 1.3rem;
+    color: white ;
+    font-weight: 700;
+    background-color: var(--black-color);
+    padding: 0.6rem;
+}
+/* deal of the day end */
+
+
+
+/* block section start here  */
+#blog .card{
+    border: none;
+    background-color: var(--black-color);
+    text-align: center;
+}
+#blog .card p{
+    line-height: 1.3rem;
+    font-size: 1.1rem;
+}
+/* block section end here  */
+
+
+/* footer section start */
+#footer .container{
+    padding: 4rem 0px;
+    background-color: var(--black-color);
+}
+#footer .icon{
+    font-size: 1.5rem;
+
+}
+
+#footer .icon a{
+    color: white;
+    margin-right: 0.7rem;
+}
